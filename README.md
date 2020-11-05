@@ -1,7 +1,8 @@
 # Prereq:
 - Checkout gazebo9.13 branch
-- Add following to gazebo::transport::TopicManager
+- Add following to TopicManager
 ```bash
+//////////////////////////////////////////////////
 void TopicManager::clearAdvertisedTopics(){
   this->advertisedTopics.clear();
 }
@@ -14,11 +15,11 @@ void TopicManager::clearAdvertisedTopics(){
 
 # Run
 In separate terminals run,
-> gzserver
-
-> <path-to-repo>/build/request_publisher "(-10,10)(10,10)(10,-10)(-10,-10)" 10 0.01 ~/map.png
-
-> <path-to-repo>/collision_map_creator_plugin/build/request_subscriber
+```bash
+1. gzserver
+2. <path-to-repo>/build/request_publisher "(-10,10)(10,10)(10,-10)(-10,-10)" 10 0.01 ~/map.png
+3. <path-to-repo>/collision_map_creator_plugin/build/request_subscriber
+```
 
 - On successful execution you should see the following exception:
 ```bash
