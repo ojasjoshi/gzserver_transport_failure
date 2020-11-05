@@ -1,8 +1,7 @@
 # Prereq:
 - Checkout gazebo9.13 branch
-- Add following to TopicManager
+- Add following to gazebo::transport::TopicManager
 ```bash
-//////////////////////////////////////////////////
 void TopicManager::clearAdvertisedTopics(){
   this->advertisedTopics.clear();
 }
