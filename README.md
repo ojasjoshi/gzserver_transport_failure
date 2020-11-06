@@ -10,8 +10,11 @@ void TopicManager::clearAdvertisedTopics(){
 - Build gazebo
 
 # Build
-> cd <path-to-repo> 
-> make 
+```bash
+mkdir build
+cd build
+make 
+```
 
 # Run
 In separate terminals run,
