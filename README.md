@@ -21,7 +21,7 @@ In separate terminals run,
 ```bash
 1. gzserver
 2. <path-to-repo>/build/request_publisher "(-10,10)(10,10)(10,-10)(-10,-10)" 10 0.01 ~/map.png
-3. <path-to-repo>/collision_map_creator_plugin/build/request_subscriber
+3. <path-to-repo>/build/request_subscriber
 ```
 
 - On successful execution you should see the following exception:
